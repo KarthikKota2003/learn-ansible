@@ -1,5 +1,6 @@
 - name: Configuring Nginx on frontend server
   hosts: frontend
+  become: yes
   tasks:
   - name: Installing Nginx
     package:
