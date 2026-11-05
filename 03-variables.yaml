@@ -1,7 +1,7 @@
 - name: Accessing variables in a file
   hosts: local
   connection: local
-  vars_file:
+  vars_files:
   - variables-store.yaml
   tasks:
   - name: Accessing variables-store.yaml
