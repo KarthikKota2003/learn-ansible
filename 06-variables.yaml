@@ -10,7 +10,7 @@
     course: "From playbook level"
   tasks:
   - name: Checking order in task level 
-    vars:
-      course: "From task level"
+    # vars:
+    #   course: "From task level"
     debug:
       msg: "This is {{course}}"
