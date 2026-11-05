@@ -3,9 +3,9 @@
   connection: local 
   # vars_files:
   # - variables-store.yaml
-  vars_prompt:
-  - name: course
-    prompt: Enter course name
+  # vars_prompt:
+  # - name: course
+  #   prompt: Enter course name
   vars:
     course: "From playbook level"
   tasks:
