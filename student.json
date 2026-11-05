@@ -1,0 +1,22 @@
+{
+    "firstName":"Shanmukha Kartheek",
+    "lastName":"Kota",
+    "dob":"01-01-01",
+    "addresses":[
+        {
+            "type":"Perm",
+            "doorNo":"1-5",
+            "city":"hyd"
+        },
+        {
+            "type":"temp",
+            "doorNo":"1-5",
+            "city":"bglr"
+        }
+    ],
+    "skills":{
+        "OS":"Linux",
+        "Scripting":"Shell",
+        "Config Mgmt":"Ansible"
+    }
+}

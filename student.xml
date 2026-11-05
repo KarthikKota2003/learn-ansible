@@ -1,0 +1,18 @@
+<Student>
+    <firstName>Shanmukha Kartheek</firstName>
+    <lastName>Kota</lastName>
+    <dob>28-09-2003</dob>
+    <addresses>
+        <address>
+        <type>Perm</type>
+        <doorNo>1-5-569</doorNo>
+        <city>hyd</city>
+        </address>
+
+        <address>
+        <type>Temp</type>
+        <doorNo>1-2-123</doorNo>
+        <city>bglr</city>
+        </address>
+    </addresses>
+</Student>

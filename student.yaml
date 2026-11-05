@@ -1,0 +1,33 @@
+- firstName: "Shanmukha Kartheek"
+  lastName: Kota
+  dob: 01-01-01
+  addresses:
+  - type: Perm
+    doorNo: 1-5
+    city: Hyd
+
+  - type: Temp
+    doorNo: 2-1
+    city: bglr
+  
+  skills:
+    OS: Linux
+    Scripting: Shell
+    Config Mgmt: Ansible
+
+- firstName: "Shiva"
+  lastName: Kotha
+  dob: 01-01-01
+  addresses:
+  - type: Perm
+    doorNo: 1-5
+    city: Hyd
+
+  - type: Temp
+    doorNo: 2-1
+    city: bglr
+  
+  skills:
+    OS: Linux
+    Scripting: Shell
+    Config Mgmt: Ansible
