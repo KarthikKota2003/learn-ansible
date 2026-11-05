@@ -4,3 +4,7 @@
   tasks:
   - name: Print default output
     debug:
+  
+  - name: Print custom output
+    debug:
+      msg: "Hello Ansible!!"
