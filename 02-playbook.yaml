@@ -1,0 +1,6 @@
+- name: To print text in output
+  hosts: local
+  connection: local
+  tasks:
+  - name: Print default output
+    debug:
