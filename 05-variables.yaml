@@ -1,0 +1,6 @@
+- name: Accessing variables in inventory file
+  hosts: frontend
+  tasks:
+  - name: Accessing frontend inventory variables
+    debug:
+      msg: "The module in frontend is {{module}}, its a {{function}} as well as {{addon}}"
