@@ -1,0 +1,16 @@
+- name: Checking the order of priority from different variables
+  hosts: local
+  connection: local 
+  vars_files:
+  - variables-store.yaml
+  vars_prompt:
+  - name: course
+    prompt: Enter course name
+  vars:
+    course: "From playbook level"
+  tasks:
+  - name: Checking order in task level 
+    vars:
+      course: "From task level"
+    debug:
+      msg: "This is {{course}}"
