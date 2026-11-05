@@ -8,10 +8,3 @@
   - name: Print custom output
     debug:
       msg: "Hello Ansible!!"
-
-- name: Ping demo on ansible host
-  hosts: local
-  connection: local
-  tasks:
-  - name: Executing Ping
-    ping:
