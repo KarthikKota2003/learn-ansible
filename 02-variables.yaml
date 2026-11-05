@@ -1,0 +1,17 @@
+- name: Creating and accessing variables at task level
+  hosts: local
+  connection: local
+  vars:
+    course: DevOps
+    trainer: Siva 
+  tasks:
+  - name: Printing variables at playbook level
+    debug:
+      msg: "Hi, this course is {{ course }} and the trainer is {{ trainer }}"
+  
+  - name: Printing variables at task level
+    vars:
+      course: DevSecOps
+      trainer: Siva kumar
+    debug:
+      msg: "Hi,this course is {{ course }} and trainer is {{ trainer }}"
