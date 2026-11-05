@@ -1,0 +1,9 @@
+- name: Accessing variables in a file
+  hosts: local
+  connection: local
+  vars_file:
+  - variables-store.yaml
+  tasks:
+  - name: Accessing variables-store.yaml
+    debug:
+      msg: "Hi, this is {{course}} course, trainer is {{trainer}} and duration is {{duration}}"
