@@ -1,0 +1,13 @@
+- name: Accessing variables from input 
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: username
+    prompt: Please enter user name
+  - name: password
+    prompt: Please enter password
+    private: true
+  tasks:
+  - name: Printing variables from input
+    debug:
+      msg: "You entered {{username}} as username and {{password}} as password"
