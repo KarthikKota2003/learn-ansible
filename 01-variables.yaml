@@ -1,0 +1,10 @@
+- name: Creating and accessing variables
+  hosts: local
+  connection: local
+  vars:
+    course: DevOps
+    trainer: Siva 
+  tasks:
+  - name: Printing variables 
+    debug:
+      msg: "Hi, this course is {{ course }} and the trainer is {{ trainer }}"
