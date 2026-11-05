@@ -1,8 +1,8 @@
 - name: Checking the order of priority from different variables
   hosts: local
   connection: local 
-  vars_files:
-  - variables-store.yaml
+  # vars_files:
+  # - variables-store.yaml
   vars_prompt:
   - name: course
     prompt: Enter course name
