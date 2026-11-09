@@ -10,4 +10,6 @@
     debug: 
       msg: |
           OS FAMILY : {{ansible_facts['os_family']}}
+          |
+          IPv4 ADDRESS : {{ansible_facts.default_ipv4.address}}
      
