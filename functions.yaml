@@ -1,0 +1,9 @@
+- name: Functions in Ansible
+  hosts: local 
+  connection: local
+  tasks: 
+  - name: splitting words in string
+    vars:
+      topic: "Linux Shell Ansible"
+    debug:
+      msg: "{{topic}} and list of splitted topics: {{topic|split()}}"
