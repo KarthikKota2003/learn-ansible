@@ -7,3 +7,12 @@
       topic: "Linux Shell Ansible"
     debug:
       msg: "{{topic}} and list of splitted topics: {{topic|split()}}"
+    
+  - name: Joining list
+    vars:
+      names:
+      - kota
+      - shanmukha
+      - kartheek
+    debug:
+      msg: "{{names}} and joined names are {{names|join(' ')}}"
