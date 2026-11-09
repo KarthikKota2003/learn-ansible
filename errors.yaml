@@ -5,6 +5,7 @@
   - name: Executing commands
     command: id roboshop
     register: user_output
+    ignore_errors: true
     
   - name: Printing output
     debug:
