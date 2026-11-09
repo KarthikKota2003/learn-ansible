@@ -5,3 +5,5 @@
   - name: Printing ansible_facts
     debug:
       msg: "Printing ansible facts : {{ansible_facts}}"
+  
+  # - name: Printing ipv4 address of localhost
