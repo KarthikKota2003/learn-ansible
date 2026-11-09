@@ -1,0 +1,16 @@
+- name: Installing multiple packages using loops 
+  hosts: local
+  connection: local 
+  become: yes
+  vars:
+    packages:
+      {name: 'nginx', state: 'present'}
+      {name: 'httpd', state: 'absent'}
+      {name: 'mysql', state: 'present'}
+  tasks:
+  - name: Installing package one by one
+    package:
+      name: "{{item.name}}"
+      state: "{{item.state}}"
+    loop: "{{packages}}"
+  
