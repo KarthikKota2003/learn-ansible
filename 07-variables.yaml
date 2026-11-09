@@ -1,0 +1,9 @@
+- name: This is a sample playbook
+  hosts: local
+  connection: local
+  vars:
+    demo: "Hello Word"
+  tasks:
+  - name: Printing demo variable
+    debug:
+      msg: "{{demo}}"
