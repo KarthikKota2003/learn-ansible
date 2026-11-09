@@ -4,7 +4,7 @@
   tasks:
   - name: Checking if number is even or not
     vars:
-      number: 10
+      number: 1
     debug:
       msg: "{{number}} is even"
     when: number%2==0
