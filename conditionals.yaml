@@ -8,3 +8,8 @@
     debug:
       msg: "{{number}} is even"
     when: number%2==0
+  
+  - name: Checking OS of target server
+    debug:
+      msg: "This is RedHat server"
+    when: ansible_facts['os_family']=="RedHat"
