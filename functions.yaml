@@ -16,3 +16,10 @@
       - kartheek
     debug:
       msg: "{{names}} and joined names are {{names|join(' ')}}"
+  
+  - name: Upper case, lower case variables
+    vars:
+      small_case: "kota"
+      upper_case: "KOTA"
+    debug:
+      msg: "{{small_case}} === {{small_case|upper}} &&& {{upper_case}} === {{upper_case|upper}}"
