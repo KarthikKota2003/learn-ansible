@@ -1,0 +1,18 @@
+- name: Variables Data Types
+  hosts: local
+  connection: local
+  vars:
+    course: "Join Devops"
+    hours: 100
+    is_learning: true
+    topics:
+    - Linux
+    - Shell
+    - Ansible 
+    additional_details:
+      trainer: Shiva
+      platform: online
+  tasks:
+  - name: Printing variable data Types
+    debug:
+      msg: "Here are variable types: course: {{course}} | {{course|type_debug}} hours: {{hours}} | {{hours|type_debug}} is_learning: {{is_learning}} | {{is_learning|type_debug}} topics: {{topics}} | {{topics|type_debug}} additional_details: {{additional_details}} | {{additional_details|type_debug}}"
