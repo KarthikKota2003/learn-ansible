@@ -3,4 +3,7 @@
   connection: local
   tasks:
   - name: Executing commands
-    command: touch sample.txt
+    command: id roboshop
+    register: user_output
+    debug:
+      msg: "Output: {{user_output}}"
