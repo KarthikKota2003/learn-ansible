@@ -9,7 +9,7 @@
   tasks:
   - name: Installing package one by one
     package:
-      name: {{item}}
+      name: "{{item}}"
       state: present
     loop: packages
   
