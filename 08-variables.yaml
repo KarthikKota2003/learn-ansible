@@ -6,4 +6,8 @@
     debug:
       msg: "Printing ansible facts : {{ansible_facts}}"
   
-  # - name: Printing ipv4 address of localhost
+  - name: Printing OS of localhost
+    debug: 
+      msg: |
+          OS FAMILY : {{ansible_facts['os_family']}}
+     
