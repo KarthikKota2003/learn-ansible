@@ -1,6 +1,7 @@
 - name: Error handling in Ansible
   hosts: local
   connection: local
+  become: yes
   tasks:
   - name: Executing commands
     command: id roboshop
@@ -10,3 +11,7 @@
   - name: Printing output
     debug:
       msg: "{{user_output}}"
+
+  - name: creating roboshop user if not exists
+    command: useradd roboshop
+    when: user_output.rc!=0
