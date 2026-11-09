@@ -3,4 +3,4 @@
   connection: local
   tasks:
   - name: Executing commands
-    command: id roboshop
+    command: touch sample.txt
