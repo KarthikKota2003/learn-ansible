@@ -3,4 +3,4 @@
   connection: local
   tasks:
   - name: Executing commands
-    command: echo "Hello World"
+    command: id roboshop
