@@ -1,6 +1,7 @@
 - name: Installing multiple packages using loops 
   hosts: local
   connection: local 
+  become: yes
   vars:
     packages:
     - nginx
