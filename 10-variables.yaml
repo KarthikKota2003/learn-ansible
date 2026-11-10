@@ -28,5 +28,5 @@
   #     msg: "{{user_output}}"
 
   - name: Redirecting output into file
-    shell: ps -ef | grep root
+    command: ps -ef | grep root
     register: user_output
