@@ -1,6 +1,7 @@
 - name: Testing Shell Vs Command module
   hosts: local
   connection: local
+  become: yes
   tasks:
   # - name: Testing idempotency on shell
   #   shell: sudo useradd suresh
