@@ -14,15 +14,19 @@
   #   debug:
   #     msg: "{{user_output}}"
 
-  - name: Testing idempotency in ansible user module
-    user:
-      name: mukesh
+  # - name: Testing idempotency in ansible user module
+  #   user:
+  #     name: mukesh
 
-  - name: Creating same user twice to see if idempotency exists
-    user: 
-      name: mukesh
-    register: user_output
+  # - name: Creating same user twice to see if idempotency exists
+  #   user: 
+  #     name: mukesh
+  #   register: user_output
   
-  - name: Printing the output of second run 
-    debug:
-      msg: "{{user_output}}"
+  # - name: Printing the output of second run 
+  #   debug:
+  #     msg: "{{user_output}}"
+
+  - name: Redirecting output into file
+    command: cat "Hello" > sample.txt
+    register: user_output
