@@ -1,0 +1,14 @@
+- name: Testing Shell Vs Command module
+  hosts: local
+  connection: local
+  tasks:
+  - name: Testing idempotency on shell
+    shell: sudo useradd suresh
+  
+  - name: Testing idempotency on shell twice
+    shell: sudo useradd suresh
+    register: user_output
+
+  - name: Printing output
+    debug:
+      msg: "{{user_output}}"
