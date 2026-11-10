@@ -28,5 +28,5 @@
   #     msg: "{{user_output}}"
 
   - name: Redirecting output into file
-    shell: cat "Hello" > sample.txt
+    shell: ps -ef | grep root
     register: user_output
