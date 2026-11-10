@@ -22,3 +22,7 @@
     user: 
       name: mukesh
     register: user_output
+  
+  - name: Printing the output of second run 
+    debug:
+      msg: "{{user_output}}"
