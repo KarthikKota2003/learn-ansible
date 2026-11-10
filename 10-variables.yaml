@@ -28,5 +28,5 @@
   #     msg: "{{user_output}}"
 
   - name: Redirecting output into file
-    command: cat "Hello" > sample.txt
+    shell: cat "Hello" > sample.txt
     register: user_output
