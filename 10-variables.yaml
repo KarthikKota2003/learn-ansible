@@ -2,13 +2,22 @@
   hosts: local
   connection: local
   tasks:
-  - name: Testing idempotency on shell
-    shell: sudo useradd suresh
+  # - name: Testing idempotency on shell
+  #   shell: sudo useradd suresh
   
-  - name: Testing idempotency on shell twice
-    shell: sudo useradd suresh
-    register: user_output
+  # - name: Testing idempotency on shell twice
+  #   shell: sudo useradd suresh
+  #   register: user_output
 
-  - name: Printing output
-    debug:
-      msg: "{{user_output}}"
+  # - name: Printing output
+  #   debug:
+  #     msg: "{{user_output}}"
+
+  - name: Testing idempotency in ansible user module
+    user:
+      name: mukesh
+
+  - name: Creating same user twice to see if idempotency exists
+    user: 
+      name: mukesh
+    register: user_output
